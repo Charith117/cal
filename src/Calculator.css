@@ -1,0 +1,66 @@
+/* Calculator.css */
+
+.calculator {
+    width: 400px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    margin: 50px auto;
+    border: 4px solid #0ff;
+    border-radius: 20px;
+    
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .display {
+    background-color: #8f8f8f;
+    padding: 15px; /* Adjust padding for the display area */
+    text-align: right;
+    height: 80px; /* Adjust the height of the display area */
+    overflow: hidden;
+    border-radius: 20px;
+    border: #ff0000;
+  }
+  
+  .input {
+    font-size: 2em; /* Adjust the font size as needed */
+    border: #0ff;
+  }
+  
+  .result {
+    color: #555;
+  }
+  .input::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 2px solid #0ff;
+    border-radius: 8px;
+    z-index: -1;
+    animation: neon 1.5s linear infinite;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; /* Adjust the gap between buttons */
+    padding: 15px; /* Adjust padding for the buttons area */
+    
+  }
+  
+  button {
+    padding: 15px; /* Adjust padding for each button */
+    font-size: 1.5em; /* Adjust the font size of the buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 4px solid #0ff;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
